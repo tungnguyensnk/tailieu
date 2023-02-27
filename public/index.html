@@ -12,8 +12,20 @@
 </head>
 <body>
 <div class="container">
-        <a href="/file/htmt.pdf" class="btn btn-outline-primary">Doc HTMT của Huy</a>
-        <a href="/file/slide.pdf" class="btn btn-outline-primary">Slide của thầy</a>
+    <a href="/file/htmt.pdf" class="btn btn-outline-primary" target="_blank">Doc HTMT của Huy</a>
+    <a href="/file/slide.pdf" class="btn btn-outline-primary" target="_blank">Slide của thầy</a>
+    <a href="https://chat.openai.com" class="btn btn-outline-primary" target="_blank">OpenAI</a>
+    <p class="mb-1"><strong>User </strong><span class="text-info"
+                                                onclick="save(this.innerText)">
+        tungnguyensnk@gmail.com</span>
+    </p>
+    <p><strong>Pass </strong><span class="text-info"
+                                   onclick="save(this.innerText)">
+        Thuy1904@</span>
+    </p>
 </div>
 </body>
+<script>
+    let save = (value) => navigator.clipboard.writeText(value);
+</script>
 </html>
