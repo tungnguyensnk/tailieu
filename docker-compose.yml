@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+    tailieu:
+        container_name: tailieu
+        build: .
+        ports:
+            - "3000:3000"
+        image: tailieu:latest
+        volumes:
+            - .:/app
+            - /app/node_modules
+        networks:
+            - network
+networks:
+    network:
+        driver: bridge
